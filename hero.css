@@ -1,0 +1,131 @@
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    background-position: center;
+    backdrop-filter: opacity(.3);
+    font-family: whyte;
+    position: relative;
+    display: flex;
+    scroll-behavior: smooth;
+}
+.bg-photo-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+}
+#bg-photo {
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 0;
+    left: 0;
+    background-image: url(images/photoz.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    opacity: .2;
+    transform: scale(1.5);
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: var(--bg-color);
+}
+.text--container {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+    scale: 1.4;
+    z-index: 2;
+}
+.text--container__text {
+    border-left: 1px solid var(--gray);
+    padding-left: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    height: 100%;
+}
+#photo {
+    height: 13rem;
+    width: 13rem;
+    background-image: url(images/photoz.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#border {
+    position: absolute;
+    height: calc(100% + 15px);
+    width: calc(100% + 15px);
+    background-color: var(--panthone);
+    border-radius: inherit ;
+    z-index: -1;
+    transform: scale(.9);
+    transition: .3s ease-out;
+}
+.hero__greet {
+    color: var(--gray);
+    font-size: 2rem;
+}
+.hero__name {
+    margin-top: -1.8rem;
+    margin-bottom: -.5rem;
+    color: var(--panthone);
+    font-size: 3rem;
+    line-height: .9;
+    transform: translateX(-100%);
+    animation: slideRight 2.5s forwards;
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.hero__devType {
+    font-size: .5rem;
+    color: var(--gray);
+}
+.icons {
+    color: var(--gray);
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 20px;
+    gap: 1.5rem;
+    flex-direction: column;
+    right: 4%;
+    z-index: 1;
+    bottom: 5%;
+    cursor: pointer;
+    animation: slideLeft 1s ease-out;
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(400%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: #0B0B0B;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: #070707;
+    --gray: #928f8f;
+    --panthone: #F7F8EA;
+}
+@font-face {
+    font-family: whyte;
+    src: url(fonts/Whyte-Black.ttf);
+}
+#logo {
+    height:60px;
+    width: 60px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    animation: pageLoad 2.5s ease-out;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+.header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100px;
+    font-size: .7em;
+    text-decoration: none;
+    font-family: whyte;
+    color: var(--gray);
+    letter-spacing: .1rem;
+}   
+.header__link::after {
+    content: attr(data-text);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 30px;
+    width: 0px;
+    color: rgb(255, 255, 255);
+    border-left: 0 solid var(--panthone);
+    border-right: 0 solid var(--panthone);
+    transition: .3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header__link:hover::after {
+    width: 100px;
+    height: 10px;
+    border-left: 1px solid var(--panthone);
+    border-right: 1px solid var(--panthone);
+}
+.nav {
+    padding-right: 3rem;
+}
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

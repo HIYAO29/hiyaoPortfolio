@@ -1,17 +1,3 @@
-// const nav = document.querySelector('navigation');
-// const hero = document.getElementById('section1');
-// const options = {};
-
-// const observer = new IntersectionObserver(function(entries, observer)
-//  {
-//     entries.forEach(entry => {
-//         console.log(entry.target);
-//     })
-//  }
-// , options);
-
-// observer.observe(hero);
-
 ///////////////////// IMAGE SLIDER //////////////////////////////////////
 const prev = document.getElementById('prevBttn');
 const next = document.getElementById('nextBttn');

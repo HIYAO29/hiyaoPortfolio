@@ -1,3 +1,6 @@
+body {
+    scroll-behavior: smooth;
+}
 #aboutMe {
     height: 100vh;
     width: 100%;
@@ -6,7 +9,6 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
 :root {
     --bg-color: #070707;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png"  type="image/x-icon">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hero.css">
@@ -52,9 +52,9 @@
             <div class="text--container">
                 <div id="photo"><div id="border"></div></div>
                 <div class="text--container__text">
-                    <h2 class="hero__greet">HELLO.</h2>
-                    <h1 class="hero__name">I'M JOHN BRENNEN <br> HIYAO</h1>
-                    <p class="hero__devType">FULLSTACK DEVELOPER</p>
+                    <div class="hero__greet-container"><h2 class="hero__greet">HELLO.</h2></div>
+                    <div class="hero__name-container"><h1 class="hero__name">I'M JOHN BRENNEN <br> HIYAO</h1></div>
+                    <div class="hero__devType-container"><p class="hero__devType">FULLSTACK DEVELOPER</div>
                 </div>
             </div>            
         </section>
@@ -128,19 +128,5 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-    <script>
-        // gsap.to('.photo', {
-        //     scrollTrigger: {
-        //         trigger: "#projects",
-        //         start: "top bottom",
-        //         end: "center center",
-        //         scrub: .5,
-        //         markers: true,
-        //     },
-        //     transform: "scale(0)"
-        // });
-
-
-    </script>
 </body>
 </html>

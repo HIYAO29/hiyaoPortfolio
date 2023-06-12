@@ -6,6 +6,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 :root {
     --bg-color: #070707;
